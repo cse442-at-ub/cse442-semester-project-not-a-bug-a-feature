@@ -1,0 +1,22 @@
+{
+    "amplify": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pia-amplify-152016-authRole",
+            "UnauthRoleArn": "arn:aws:iam::160279402781:role/amplify-pia-amplify-152016-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::160279402781:role/amplify-pia-amplify-152016-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-pia-amplify-152016-deployment",
+            "UnauthRoleName": "amplify-pia-amplify-152016-unauthRole",
+            "StackName": "amplify-pia-amplify-152016",
+            "StackId": "arn:aws:cloudformation:us-east-1:160279402781:stack/amplify-pia-amplify-152016/16d183b0-528c-11ea-8c3b-12d8771823f5",
+            "AmplifyAppId": "dy3yv5fb1jfe3"
+        },
+        "categories": {
+            "auth": {
+                "piaff3b8991": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+framework module Pods_PiaTests {
+  umbrella header "Pods-PiaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
