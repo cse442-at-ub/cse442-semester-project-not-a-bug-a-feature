@@ -19,7 +19,7 @@ public class MyProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         //String str = "John Doe";
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
 
         uName = findViewById(R.id.myUsername);
         uName.setText("Juan Do"); // This is a temporary name.

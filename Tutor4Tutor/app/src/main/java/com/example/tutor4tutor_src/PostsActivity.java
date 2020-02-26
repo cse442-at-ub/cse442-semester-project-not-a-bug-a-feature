@@ -1,4 +1,4 @@
-package com.example.jiyoonli_posts;
+package com.example.tutor4tutor_src;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -18,12 +18,15 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class PostsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Find a Student");
+
+        //TODO: Load displayed postes based on what kind of service they are looking for (Tutor posts vs Student Posts)
+
         setContentView(R.layout.activity_posts);
 
         //this is temp content for post
@@ -45,7 +48,6 @@ public class PostsActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

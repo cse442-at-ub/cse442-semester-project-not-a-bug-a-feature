@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainMenu"/>
+        <activity android:name=".PostsActivity"/>
+        <activity android:name=".ClassesActivity"/>
+        <activity android:name=".LecturesActivity"/>
         <activity android:name=".MyAvailability"/>
         <activity android:name=".MyProfile"/>
         <activity android:name=".login">

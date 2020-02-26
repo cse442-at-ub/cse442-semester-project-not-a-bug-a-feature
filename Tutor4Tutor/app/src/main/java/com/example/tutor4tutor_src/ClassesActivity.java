@@ -1,4 +1,4 @@
-package com.example.jiyoonli_lectures;
+package com.example.tutor4tutor_src;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
