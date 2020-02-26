@@ -1,4 +1,0 @@
-#Wed Feb 26 08:58:16 EST 2020
-base.0=C\:\\Users\\jylim\\Downloads\\442temp\\jiyoonli_posts2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
