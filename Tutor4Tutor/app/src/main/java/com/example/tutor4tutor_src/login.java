@@ -40,10 +40,8 @@ public class login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "logging in!", Toast.LENGTH_LONG).show();
                     if (!(checkBox.isChecked())) {
                         editText2.setText("");
-
+                        editText.setText("");
                     }
-
-                    editText.setText("");
                     Intent intent = new Intent(login.this, MainMenu.class);
                     startActivity(intent);
                 } else {
