@@ -41,8 +41,10 @@ public class login extends AppCompatActivity {
                     if (!(checkBox.isChecked())) {
                         editText2.setText("");
                         editText.setText("");
+
                     }
-                    Intent intent = new Intent(login.this, MainMenu.class);
+
+                    Intent intent = new Intent(login.this, Menu_page.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "please enter correct details ", Toast.LENGTH_LONG).show();
