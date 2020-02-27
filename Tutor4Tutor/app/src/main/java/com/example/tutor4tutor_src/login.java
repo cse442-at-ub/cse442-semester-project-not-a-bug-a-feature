@@ -1,46 +1,75 @@
 package com.example.tutor4tutor_src;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+
+
 public class login extends AppCompatActivity {
 
-    SQLiteDatabase db;
-    EditText a,b,c;
+    EditText editText, editText2;
+    Button button;
+    CheckBox checkBox;
 
-    @SuppressLint("WrongConstant")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        db=openOrCreateDatabase("University",MODE_APPEND,null);
-        db.execSQL("create table if not exists Student(id int,name text,course text)");
-        a=(EditText)findViewById(R.id.editText1); //TODO: id login params with contextual names ~slgreco
-        b=(EditText)findViewById(R.id.editText2);
-        c=(EditText)findViewById(R.id.editText3);
 
-    }
-    public void SaveData(View v){
-        int id=Integer.parseInt(a.getText().toString());
-        String name=b.getText().toString();
-        String course=c.getText().toString();
-        try{
-            db.execSQL("Insert into Student values(' "+id+" ' ,'"+name+ " ','"+course+" ')");
-            Toast.makeText(getApplicationContext()," Student record Added ", Toast.LENGTH_LONG).show();
-            Intent toMenu = new Intent(login.this, MainMenu.class);
-            startActivity(toMenu);
-        }
+        editText = (EditText) findViewById(R.id.editText);
+        editText2 = (EditText) findViewById(R.id.editText2);
+        button = (Button) findViewById(R.id.button);
+        checkBox = (CheckBox) findViewById(R.id.checkBox);
 
-        catch(Exception e){
-            Toast.makeText(getApplicationContext()," Student record not Added ", Toast.LENGTH_LONG).show();
-        }
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                if (login(editText2.getText().toString(), editText.getText().toString()) == 1) {
+                    Toast.makeText(getApplicationContext(), "logging in!", Toast.LENGTH_LONG).show();
+                    if (!(checkBox.isChecked())) {
+                        editText2.setText("");
+
+                    }
+
+                    editText.setText("");
+                    Intent intent = new Intent(login.this, MainMenu.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(getApplicationContext(), "please enter correct details ", Toast.LENGTH_LONG).show();
+
+                }
+            }
+        });
     }
-}
+
+    //LOGIN METHOD
+    private int login(String name , String passwd)
+    {
+        if(name.isEmpty() || passwd.isEmpty())
+        {
+            return 0;
+        }
+        else if (name.equals("testuser") && passwd.equals("password"))
+        {return 1;
+
+        }
+        return 0;
+
+    }};
+
+
+
+
 
