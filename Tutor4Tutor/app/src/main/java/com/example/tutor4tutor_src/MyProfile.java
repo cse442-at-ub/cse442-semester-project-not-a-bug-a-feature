@@ -37,7 +37,7 @@ public class MyProfile extends AppCompatActivity {
         toMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent openMenu = new Intent(MyProfile.this, MainMenu.class);
+                Intent openMenu = new Intent(MyProfile.this, Menu_page.class);
                 startActivity(openMenu);
             }
         });
