@@ -51,4 +51,8 @@ public class MyProfile extends AppCompatActivity {
             }
         });
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> wrong task number #49 #50

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".highschool"></activity>
+=======
+        <activity android:name=".highschoolcollege"></activity>
+>>>>>>> wrong task number #49 #50
         <activity android:name=".experience" />
         <activity android:name=".editpage" />
         <activity android:name=".Menu_page" />

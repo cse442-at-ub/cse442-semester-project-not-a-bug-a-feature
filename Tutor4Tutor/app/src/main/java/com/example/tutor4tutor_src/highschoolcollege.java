@@ -4,15 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class experience extends AppCompatActivity {
+public class highschoolcollege extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experience);
+        setContentView(R.layout.activity_highschoolcollege);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> wrong task number #49 #50
