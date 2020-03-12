@@ -1,6 +1,0 @@
-framework module amplify_tools {
-  umbrella header "amplify-tools-umbrella.h"
-
-  export *
-  module * { export * }
-}
