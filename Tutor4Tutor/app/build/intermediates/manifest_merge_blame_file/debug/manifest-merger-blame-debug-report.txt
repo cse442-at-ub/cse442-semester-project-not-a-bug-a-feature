@@ -1,0 +1,78 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myprofile"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:7:5-30:19
+14        android:allowBackup="true"
+14-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\GUNJAN\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:13:9-40
+23        <activity android:name="com.example.tutor4tutor_src.Post_Student" />
+23-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:14:9-59
+23-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:14:19-47
+24        <activity android:name="com.example.tutor4tutor_src.Menu_page" />
+24-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:15:9-47
+24-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:15:19-44
+25        <activity android:name="com.example.tutor4tutor_src.homepage" >
+25-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:16:9-22:20
+25-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:16:19-43
+26            <intent-filter>
+26-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:18:17-69
+27-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:20:17-77
+29-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity android:name="com.example.tutor4tutor_src.MainMenu" />
+32-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:23:9-46
+32-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:23:19-43
+33        <activity android:name="com.example.tutor4tutor_src.PostsActivity" />
+33-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:24:9-51
+33-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:24:19-48
+34        <activity android:name="com.example.tutor4tutor_src.ClassesActivity" />
+34-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:25:9-53
+34-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:25:19-50
+35        <activity android:name="com.example.tutor4tutor_src.LecturesActivity" />
+35-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:26:9-54
+35-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:26:19-51
+36        <activity android:name="com.example.tutor4tutor_src.MyAvailability" />
+36-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:27:9-52
+36-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:27:19-49
+37        <activity android:name="com.example.tutor4tutor_src.MyProfile" />
+37-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:28:9-47
+37-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:28:19-44
+38        <activity android:name="com.example.tutor4tutor_src.login" />
+38-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:29:9-43
+38-->C:\Users\GUNJAN\Desktop\cse442-semester-project-not-a-bug-a-feature\Tutor4Tutor\app\src\main\AndroidManifest.xml:29:19-40
+39    </application>
+40
+41</manifest>
