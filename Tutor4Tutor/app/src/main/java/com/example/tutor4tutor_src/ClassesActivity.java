@@ -43,8 +43,9 @@ public class ClassesActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Snackbar.make(view, "Sprint2: Post New functionality will be added", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                Intent openProfile = new Intent(ClassesActivity.this, AddNewClassActivity.class);
-                startActivity(openProfile);
+                Intent intent = new Intent(ClassesActivity.this, AddNewClassActivity.class);
+                intent.putExtra("classlist", classdata);
+                startActivityForResult(intent, 22);
             }
         });
 
@@ -59,6 +60,7 @@ public class ClassesActivity extends AppCompatActivity {
         setListView();
     }
 
+
     public void setListView()
     {
         //example of one class
@@ -71,6 +73,15 @@ public class ClassesActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<String>(ClassesActivity.this, android.R.layout.simple_list_item_1, classdata);
         listView.setAdapter(adapter);
+
+        //Short Click for going to a detailed page (= a Lecture List Page)
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent openProfile = new Intent(ClassesActivity.this, LecturesActivity.class);
+                startActivity(openProfile);
+            }
+        });
 
         //Long Click for DELETE a class
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -95,6 +106,21 @@ public class ClassesActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(requestCode == 22)
+        {
+            if(resultCode == RESULT_OK)
+            {
+                String text = data.getStringExtra("newclass");
+                classdata.add(text);
+                adapter.notifyDataSetChanged();
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     //START: a dialog for FILTER

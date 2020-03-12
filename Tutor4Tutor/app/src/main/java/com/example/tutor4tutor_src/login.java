@@ -26,9 +26,9 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        editText = (EditText) findViewById(R.id.editText);
-        editText2 = (EditText) findViewById(R.id.editText2);
-        button = (Button) findViewById(R.id.button);
+        editText = (EditText) findViewById(R.id.class_subject);
+        editText2 = (EditText) findViewById(R.id.class_title);
+        button = (Button) findViewById(R.id.class_button);
         checkBox = (CheckBox) findViewById(R.id.checkBox);
 
         button.setOnClickListener(new View.OnClickListener() {

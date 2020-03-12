@@ -70,7 +70,7 @@
                 android:text="Button" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/class_button"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:text="ButtonT" />

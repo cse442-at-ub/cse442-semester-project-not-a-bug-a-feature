@@ -33,7 +33,7 @@ public class PostsActivity extends AppCompatActivity {
         Button button = (Button)findViewById(R.id.button2);
         button.setText("Let's PHYSICS! \nPhysics \nEllen Yang ");
 
-        button = (Button)findViewById(R.id.button);
+        button = (Button)findViewById(R.id.class_button);
         button.setText("You got Stat \nStatistics \nJenna Smith ");
 
         button = (Button)findViewById(R.id.button7);
