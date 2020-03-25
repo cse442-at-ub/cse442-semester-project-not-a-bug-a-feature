@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userBin"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/imageView2"
+
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/myUsername"
+                android:text="myName"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+
+                android:textStyle="bold"
+
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:id="@+id/myAvailability"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+
+                android:background="#00000000"
+
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+
+                android:src="@android:drawable/ic_menu_today"
+                tools:ignore="ContentDescription" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_centerVertical="true">
+                <ImageButton
+                    android:scaleType="fitXY"
+                    android:id="@+id/returnMenu"
+                    android:layout_margin="5dp"
+                    android:layout_height="55dp"
+                    android:layout_width="55dp"
+                    android:background="#00000000"
+                    app:srcCompat="@android:drawable/ic_media_previous" />
+
+                <ImageButton
+                    android:scaleType="fitXY"
+                    android:id="@+id/editProfile_btn"
+                    android:layout_margin="5dp"
+                    android:layout_height="55dp"
+                    android:layout_width="55dp"
+                    android:layout_below="@+id/returnMenu"
+                    android:background="#00000000"
+                    app:srcCompat="@android:drawable/ic_menu_edit" /></RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userBin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-1dp">
+
+            <TextView
+                android:id="@+id/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="About me:"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/AboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="201dp"
+                android:layout_below="@+id/Label"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="33dp"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical"
+                android:ems="10"
+                android:text=""
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="53dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="162dp"
+                android:gravity="center"
+                android:text="Major"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Major"
+                android:ems="10"
+                android:layout_width="349dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="66dp" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="53dp"
+                android:ems="10"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="69dp"
+                android:gravity="center"
+                android:text="Identity"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/Identity"
+                android:ems="10"
+                android:layout_width="349dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="156dp"
+ />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
