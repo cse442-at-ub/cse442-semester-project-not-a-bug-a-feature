@@ -26,6 +26,8 @@
         <activity android:name=".MyProfile" />
         <activity android:name=".login" />
         <activity android:name=".Register"/>
+        <activity android:name=".UploadFilePage"/>
+        <activity android:name=".ResourcesPage"/>
     </application>
 
 </manifest>

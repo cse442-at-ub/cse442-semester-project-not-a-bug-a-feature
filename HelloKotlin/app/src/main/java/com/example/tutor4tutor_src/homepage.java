@@ -9,11 +9,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
-
 public class homepage extends AppCompatActivity {
 
 
@@ -26,15 +21,12 @@ public class homepage extends AppCompatActivity {
         setContentView(R.layout.activity_homepage);
 
         // the input form is "set/get/remove","filename","username","id","data"
-        Map<String, String> hm = new HashMap<String, String>();
-        hm.put("Key = ClassTitle","value = yourinputvalue");
-        hm.put("Key = ClassSubject","value = yourinputvalue");
-        String jsonstring = new JSONObject(hm).toString();
+//        Map<String, String> hm = new HashMap<String, String>();
+//        hm.put("Key = ClassTitle","value = yourinputvalue");
+//        hm.put("Key = ClassSubject","value = yourinputvalue");
+//        String jsonstring = new JSONObject(hm).toString();
 //        new ClassInfoTask().execute("set","classinfo.txt","yang","10001",jsonstring);
-//        new ClassInfoTask().execute("set","classinfo.txt","yang","10002",jsonstring);
-//        new ClassInfoTask().execute("set","classinfo.txt","yang","10003",jsonstring);
-
-        new ClassInfoTask().execute("remove","classinfo.txt","yang","10002");
+//        new ClassInfoTask().execute("remove","classinfo.txt","yang","10001");
 
         button=(Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {

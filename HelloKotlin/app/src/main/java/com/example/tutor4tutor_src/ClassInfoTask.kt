@@ -10,7 +10,6 @@ import java.sql.DriverManager
 
 
 public class ClassInfoTask : AsyncTask<String, Int, String>() {
-
     // the input form is "set/get/remove","filename","username","id","data"
     override fun doInBackground(vararg params: String): String {
         var jsch = JSch();

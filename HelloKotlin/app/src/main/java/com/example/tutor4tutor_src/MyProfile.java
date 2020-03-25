@@ -21,7 +21,7 @@ public class MyProfile extends AppCompatActivity {
 
 
     TextView uName;
-    ImageButton uAvail,toMenu,editProfile; // ImageButton Object(s) for User Availability Menu, ...
+    ImageButton uAvail,toMenu,editProfile,resourcesPageBtn; // ImageButton Object(s) for User Availability Menu, ...
 
     EditText aboutme,major,identity;
 
@@ -33,7 +33,7 @@ public class MyProfile extends AppCompatActivity {
         aboutme = (EditText)findViewById(R.id.AboutMe);
         major =(EditText)findViewById(R.id.Major);
         identity = (EditText)findViewById(R.id.Identity);
-
+        resourcesPageBtn = (ImageButton) findViewById(R.id.profile_resources_btn);
         editProfile = (ImageButton)findViewById(R.id.editProfile_btn);
         uName = findViewById(R.id.myUsername);
         uName.setText(UserStates.INSTANCE.getUsername()); // This is a temporary name.
@@ -70,7 +70,13 @@ public class MyProfile extends AppCompatActivity {
                 startActivity(openMenu);
             }
         });
-
+        resourcesPageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openMenu = new Intent(MyProfile.this, ResourcesPage.class);
+                startActivity(openMenu);
+            }
+        });
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
