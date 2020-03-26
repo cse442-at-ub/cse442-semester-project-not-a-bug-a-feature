@@ -64,10 +64,10 @@ public class ClassesActivity extends AppCompatActivity {
     public void setListView()
     {
         //example of one class
-        classdata.add("Let's Physics!" +"\n" + "PHY101" +"\n" + "Emily Taylor");
-        classdata.add("Let's Physics!2" +"\n" + "PHY101" +"\n" + "Emily Taylor");
-        classdata.add("Let's Physics!3" +"\n" + "PHY101" +"\n" + "Emily Taylor");
-        classdata.add("Let's Physics!4" +"\n" + "PHY101" +"\n" + "Emily Taylor");
+        classdata.add("Let's Physics!" +"\n" + "PHY101");
+        classdata.add("EASY Statistics" +"\n" + "STA303");
+        classdata.add("Check Your Sentences" +"\n" + "WTR101");
+        classdata.add("Business Tutor" +"\n" + "Elementary Business");
 
         listView = (ListView) findViewById(R.id.mList);
 
