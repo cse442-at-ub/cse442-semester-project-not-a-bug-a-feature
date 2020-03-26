@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Menu_page"></activity>
+=======
+        <activity android:name=".highschoolcollege"></activity>
+        <activity android:name=".experience" />
+        <activity android:name=".editpage" />
+        <activity android:name=".Menu_page" />
+>>>>>>> development
         <activity android:name=".homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
