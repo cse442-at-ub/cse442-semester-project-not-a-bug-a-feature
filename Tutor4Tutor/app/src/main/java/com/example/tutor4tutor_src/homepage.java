@@ -15,6 +15,7 @@ public class homepage extends AppCompatActivity {
 
     EditText textView5, text;
     Button button;
+    Button server_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,17 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(homepage.this, login.class);
+                startActivity(intent);
+
+            }
+        });
+
+        server_btn = (Button)findViewById(R.id.serverlogin_btn);
+
+        server_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(homepage.this, wenxuan_login.class);
                 startActivity(intent);
 
             }
