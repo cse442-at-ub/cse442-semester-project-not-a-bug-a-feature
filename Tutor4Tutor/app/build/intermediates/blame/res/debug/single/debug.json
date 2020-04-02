@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/drawable-v21/design_password_eye.xml"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_add_new_class.xml.flat",
         "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/layout/activity_add_new_class.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/drawable-v21/design_password_eye.xml"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -48,12 +48,12 @@
         "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_wenxuan_login.xml.flat",
         "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/layout/activity_wenxuan_login.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -100,12 +100,12 @@
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
@@ -128,24 +128,24 @@
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable/abc_text_cursor_material.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/color/abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_profile.xml.flat",
         "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/color/abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -164,12 +164,12 @@
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_experience.xml.flat",
-        "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/layout/activity_experience.xml"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_activity_experience.xml.flat",
+        "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/layout/activity_experience.xml"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
@@ -180,12 +180,12 @@
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-hdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_checked_icon_null_animation.xml.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/anim/btn_checkbox_to_checked_icon_null_animation.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -200,12 +200,12 @@
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/layout_design_text_input_password_icon.xml.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/layout/design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-mdpi_paper.png.flat",
@@ -248,24 +248,24 @@
         "source": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/2a2b78513d9358fb0d7c10ccaa4c41e5/core-1.3.0-beta01/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/drawable-xxhdpi-v4/design_ic_visibility.png"
-    },
-    {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable_abc_vector_test.xml.flat",
         "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/1cf7fea9aaebdc872093d4304ea1ce01/appcompat-resources-1.1.0/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
+        "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/f1fb3c31ddfbe3b4154f03ec4dabec9e/material-1.0.0/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/res/merged/debug/anim_btn_radio_to_off_mtrl_ring_outer_animation.xml.flat",
