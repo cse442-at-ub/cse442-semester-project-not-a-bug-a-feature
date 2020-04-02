@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
+            "outputFile": "/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "/Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/5ce2b760dba1d0dd6a9857725c027f1c/appcompat-1.1.0/res/values-sw/values-sw.xml",

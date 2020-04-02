@@ -6,121 +6,121 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="15"
-8-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml
+8-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml
+9-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:6:5-79
-12-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:6:22-76
+12-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:8:5-46:19
+14-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:8:5-46:19
 15        android:allowBackup="true"
-15-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:9:9-35
+15-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:9:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 16-->[androidx.core:core:1.3.0-beta01] /Users/ishikaagarwal/.gradle/caches/transforms-2/files-2.1/2a2b78513d9358fb0d7c10ccaa4c41e5/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
 18        android:icon="@mipmap/ic_launcher"
-18-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:10:9-43
+18-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:10:9-43
 19        android:label="@string/app_name"
-19-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:11:9-41
+19-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:11:9-41
 20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:12:9-54
+20-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:12:9-54
 21        android:supportsRtl="true"
-21-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:13:9-35
+21-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:13:9-35
 22        android:testOnly="true"
 23        android:theme="@style/AppTheme" >
-23-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:14:9-40
+23-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:14:9-40
 24        <activity android:name="com.example.tutor4tutor_src.progress4" />
-24-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:15:9-47
-24-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:15:19-44
+24-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:15:9-47
+24-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:15:19-44
 25        <activity android:name="com.example.tutor4tutor_src.progress3" />
-25-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:16:9-47
-25-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:16:19-44
+25-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:16:9-47
+25-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:16:19-44
 26        <activity android:name="com.example.tutor4tutor_src.progress2" />
-26-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:17:9-47
-26-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:17:19-44
+26-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:17:9-47
+26-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:17:19-44
 27        <activity android:name="com.example.tutor4tutor_src.selectcourse" />
-27-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:18:9-50
-27-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:18:19-47
+27-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:18:9-50
+27-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:18:19-47
 28        <activity android:name="com.example.tutor4tutor_src.progress" />
-28-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:19:9-46
-28-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:19:19-43
+28-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:19:9-46
+28-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:19:19-43
 29        <activity android:name="com.example.tutor4tutor_src.ReplyPost" />
-29-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:20:9-47
-29-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:20:19-44
+29-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:20:9-47
+29-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:20:19-44
 30        <activity android:name="com.example.tutor4tutor_src.Menu_page" />
-30-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:21:9-47
-30-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:21:19-44
+30-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:21:9-47
+30-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:21:19-44
 31        <activity android:name="com.example.tutor4tutor_src.highschoolcollege" />
-31-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:22:9-55
-31-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:22:19-52
+31-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:22:9-55
+31-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:22:19-52
 32        <activity android:name="com.example.tutor4tutor_src.experience" />
-32-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:23:9-48
-32-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:23:19-45
+32-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:23:9-48
+32-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:23:19-45
 33        <activity android:name="com.example.tutor4tutor_src.editpage" />
-33-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:24:9-46
-33-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:24:19-43
+33-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:24:9-46
+33-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:24:19-43
 34        <activity android:name="com.example.tutor4tutor_src.homepage" >
-34-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:25:9-31:20
-34-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:25:19-43
+34-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:25:9-31:20
+34-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:25:19-43
 35            <intent-filter>
-35-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:26:13-30:29
+35-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:26:13-30:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:27:17-69
-36-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:27:25-66
+36-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:27:17-69
+36-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:27:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:29:17-77
-38-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:29:27-74
+38-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:29:17-77
+38-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:29:27-74
 39            </intent-filter>
 40        </activity>
 41        <activity android:name="com.example.tutor4tutor_src.MainMenu" />
-41-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:32:9-46
-41-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:32:19-43
+41-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:32:9-46
+41-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:32:19-43
 42        <activity android:name="com.example.tutor4tutor_src.PostsActivity" />
-42-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:33:9-51
-42-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:33:19-48
+42-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:33:9-51
+42-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:33:19-48
 43        <activity android:name="com.example.tutor4tutor_src.ClassesActivity" />
-43-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:34:9-53
-43-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:34:19-50
+43-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:34:9-53
+43-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:34:19-50
 44        <activity android:name="com.example.tutor4tutor_src.LecturesActivity" />
-44-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:35:9-54
-44-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:35:19-51
+44-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:35:9-54
+44-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:35:19-51
 45        <activity android:name="com.example.tutor4tutor_src.MyAvailability" />
-45-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:36:9-52
-45-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:36:19-49
+45-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:36:9-52
+45-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:36:19-49
 46        <activity android:name="com.example.tutor4tutor_src.MyProfile" />
-46-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:37:9-47
-46-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:37:19-44
+46-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:37:9-47
+46-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:37:19-44
 47        <activity android:name="com.example.tutor4tutor_src.login" />
-47-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:38:9-43
-47-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:38:19-40
+47-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:38:9-43
+47-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:38:19-40
 48        <activity android:name="com.example.tutor4tutor_src.AddNewClassActivity" />
-48-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:39:9-57
-48-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:39:19-54
+48-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:39:9-57
+48-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:39:19-54
 49        <activity android:name="com.example.tutor4tutor_src.AddNewPost" />
-49-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:40:9-48
-49-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:40:19-45
+49-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:40:9-48
+49-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:40:19-45
 50        <activity android:name="com.example.tutor4tutor_src.wenxuan_login" />
-50-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:41:9-51
-50-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:41:19-48
+50-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:41:9-51
+50-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:41:19-48
 51        <activity android:name="com.example.tutor4tutor_src.Register" />
-51-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:42:9-46
-51-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:42:19-43
+51-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:42:9-46
+51-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:42:19-43
 52        <activity android:name="com.example.tutor4tutor_src.wenxuan_ProfilePage" />
-52-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:43:9-57
-52-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:43:19-54
+52-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:43:9-57
+52-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:43:19-54
 53        <activity android:name="com.example.tutor4tutor_src.UploadFilePage" />
-53-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:44:9-52
-53-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:44:19-49
+53-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:44:9-52
+53-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:44:19-49
 54        <activity android:name="com.example.tutor4tutor_src.ResourcesPage" />
-54-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:45:9-51
-54-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature-dev-gg/Tutor4Tutor/app/src/main/AndroidManifest.xml:45:19-48
+54-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:45:9-51
+54-->/Users/ishikaagarwal/Desktop/cse442-semester-project-not-a-bug-a-feature/Tutor4Tutor/app/src/main/AndroidManifest.xml:45:19-48
 55    </application>
 56
 57</manifest>
