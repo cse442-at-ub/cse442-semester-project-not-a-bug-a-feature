@@ -30,33 +30,6 @@ public class editpage extends AppCompatActivity {
         button5= (Button) findViewById(R.id.button5);
         button8= (Button) findViewById(R.id.button8);
 
-<<<<<<< HEAD
-    button4.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(editpage.this, experience.class);
-            startActivity(intent);
-        }
-    });
-    button5.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(editpage.this, highschool.class);
-        startActivity(intent);
-
-    }
-    });
-
-    button8.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Toast.makeText(getApplicationContext(), "Saving Data!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(editpage.this, MyProfile.class);
-            startActivity(intent);
-
-        }
-    });
-=======
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,14 +55,9 @@ public class editpage extends AppCompatActivity {
 
             }
         });
->>>>>>> wrong task number #49 #50
 
 
 
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> wrong task number #49 #50

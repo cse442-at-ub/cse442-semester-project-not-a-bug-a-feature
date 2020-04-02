@@ -8,6 +8,9 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -18,10 +21,16 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.tutor4tutor_src.addexperience" />
-        <activity android:name="com.example.tutor4tutor_src.addhighschool" />
-        <activity android:name="com.example.tutor4tutor_src.editprofile" />
+        <activity android:name="com.example.tutor4tutor_src.progress4" />
+        <activity android:name="com.example.tutor4tutor_src.progress3" />
+        <activity android:name="com.example.tutor4tutor_src.progress2" />
+        <activity android:name="com.example.tutor4tutor_src.selectcourse" />
+        <activity android:name="com.example.tutor4tutor_src.progress" />
+        <activity android:name="com.example.tutor4tutor_src.ReplyPost" />
         <activity android:name="com.example.tutor4tutor_src.Menu_page" />
+        <activity android:name="com.example.tutor4tutor_src.highschoolcollege" />
+        <activity android:name="com.example.tutor4tutor_src.experience" />
+        <activity android:name="com.example.tutor4tutor_src.editpage" />
         <activity android:name="com.example.tutor4tutor_src.homepage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +45,13 @@
         <activity android:name="com.example.tutor4tutor_src.MyAvailability" />
         <activity android:name="com.example.tutor4tutor_src.MyProfile" />
         <activity android:name="com.example.tutor4tutor_src.login" />
+        <activity android:name="com.example.tutor4tutor_src.AddNewClassActivity" />
+        <activity android:name="com.example.tutor4tutor_src.AddNewPost" />
+        <activity android:name="com.example.tutor4tutor_src.wenxuan_login" />
+        <activity android:name="com.example.tutor4tutor_src.Register" />
+        <activity android:name="com.example.tutor4tutor_src.wenxuan_ProfilePage" />
+        <activity android:name="com.example.tutor4tutor_src.UploadFilePage" />
+        <activity android:name="com.example.tutor4tutor_src.ResourcesPage" />
     </application>
 
 </manifest>

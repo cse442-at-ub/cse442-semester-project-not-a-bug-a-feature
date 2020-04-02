@@ -6,12 +6,195 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b095ba-b492-487a-9aae-ad93b2f0d385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/render.experimental.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/MyProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/MyProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
+    <list default="true" id="bb71d0a1-34fa-496c-b4e4-0d620939b034" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/progress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/progress2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/progress3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/progress4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutor4tutor_src/selectcourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_progress.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_progress2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_progress3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_progress4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_selectcourse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/render.experimental.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/androidTest/java/com/example/tutor4tutor_src/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/ClassesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/LecturesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/Menu_page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MyAvailability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MyProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/PostsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/addexperience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/addhighschool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/editprofile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/homepage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/drawable/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_addexperience.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_addhighschool.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_editprofile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_homepage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_lectures.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_menu_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_my_availability.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/activity_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/content_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/layout/content_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/menu/menu_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/menu/menu_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/menu/options_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/app/src/test/java/com/example/tutor4tutor_src/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Tutor4Tutor/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../calc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/androidTest/java/com/example/tutor4tutor_src/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/ClassesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/LecturesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MainMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/Menu_page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MyAvailability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/MyProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/PostsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/editpage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/experience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/highschoolcollege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/homepage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/java/com/example/tutor4tutor_src/login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/drawable/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_editpage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_experience.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_highschoolcollege.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_homepage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_lectures.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_menu_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_my_availability.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/activity_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/content_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/layout/content_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/menu/menu_classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/menu/menu_posts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/menu/options_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/app/src/test/java/com/example/tutor4tutor_src/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cse442-semester-project-not-a-bug-a-feature-master/Tutor4Tutor/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/androidTest/java/com/example/logintutor4tutor/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/java/com/example/logintutor4tutor/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/java/com/example/logintutor4tutor/login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/app/src/test/java/com/example/logintutor4tutor/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../logintutor4tutor/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pre.c" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +215,21 @@
       </state>
     </system>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1YgAQ9ihYpnuNSb5gUBdOXNP3n2" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ZyVZeIOBna8esWOwaIrGGXoFik" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -121,11 +313,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="55b095ba-b492-487a-9aae-ad93b2f0d385" name="Default Changelist" comment="" />
-      <created>1583353844324</created>
+      <changelist id="bb71d0a1-34fa-496c-b4e4-0d620939b034" name="Default Changelist" comment="" />
+      <created>1585811377821</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583353844324</updated>
+      <updated>1585811377821</updated>
     </task>
     <servers />
   </component>
@@ -134,9 +326,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

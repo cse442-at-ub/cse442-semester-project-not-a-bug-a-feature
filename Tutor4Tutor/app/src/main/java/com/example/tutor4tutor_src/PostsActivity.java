@@ -1,6 +1,7 @@
 package com.example.tutor4tutor_src;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -32,18 +33,63 @@ public class PostsActivity extends AppCompatActivity {
         //this is temp content for post
         Button button = (Button)findViewById(R.id.button2);
         button.setText("Let's PHYSICS! \nPhysics \nEllen Yang ");
+        button.setOnClickListener(new View.OnClickListener() {
+                                      public void onClick(View v) {
+                                          System.out.println("Button Clicked");
+
+                                          Intent activity2Intent = new Intent(getApplicationContext(), ReplyPost.class);
+                                          startActivity(activity2Intent);
+                                      }
+                                  });
+
 
         button = (Button)findViewById(R.id.button);
         button.setText("You got Stat \nStatistics \nJenna Smith ");
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent activity2Intent = new Intent(getApplicationContext(), ReplyPost.class);
+                startActivity(activity2Intent);
+            }
+        });
+
 
         button = (Button)findViewById(R.id.button7);
         button.setText("Advanced Marketing \nBusiness \nLui Pearce ");
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent activity2Intent = new Intent(getApplicationContext(), ReplyPost.class);
+                startActivity(activity2Intent);
+            }
+        });
+
 
         button = (Button)findViewById(R.id.button3);
         button.setText("A Tutoring for Tech Report \nWriting \nEllen Yang ");
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent activity2Intent = new Intent(getApplicationContext(), ReplyPost.class);
+                startActivity(activity2Intent);
+            }
+        });
+
 
         button = (Button)findViewById(R.id.button6);
         button.setText("Physics Should Go on \nPhysics \nKate Taylor ");
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent activity2Intent = new Intent(getApplicationContext(), ReplyPost.class);
+                startActivity(activity2Intent);
+            }
+        });
+
         //temp content for post END
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -54,6 +100,16 @@ public class PostsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Sprint2: Post New functionality will be added", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        FloatingActionButton fab1 = findViewById(R.id.fab);
+
+        fab1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PostsActivity.this, AddNewPost.class);
+                startActivity(intent);
             }
         });
 

@@ -11,8 +11,4 @@ public class experience extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> wrong task number #49 #50
