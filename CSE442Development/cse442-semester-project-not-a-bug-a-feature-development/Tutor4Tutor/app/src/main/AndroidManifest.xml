@@ -37,6 +37,8 @@
         <activity android:name=".wenxuan_ProfilePage" />
         <activity android:name=".UploadFilePage" />
         <activity android:name=".ResourcesPage" />
+        <activity android:name=".ListUserPage"/>
+        <activity android:name=".UserCommentPage"/>
     </application>
 
 </manifest>

@@ -12,4 +12,6 @@ object UserStates{
     var company_name=""
     var company_startdate= ""
     var company_enddate = ""
+
+    var selectUsername = ""
 }

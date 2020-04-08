@@ -21,7 +21,7 @@ public class wenxuan_ProfilePage extends AppCompatActivity {
 
 
     TextView uName;
-    ImageButton uAvail,toMenu,editProfile,resourcesPageBtn; // ImageButton Object(s) for User Availability Menu, ...
+    ImageButton uAvail,toMenu,editProfile,resourcesPageBtn,userprofilepage_listuser_btn; // ImageButton Object(s) for User Availability Menu, ...
 
     EditText aboutme,major,identity;
 
@@ -35,6 +35,7 @@ public class wenxuan_ProfilePage extends AppCompatActivity {
         identity = (EditText)findViewById(R.id.Identity);
         resourcesPageBtn = (ImageButton) findViewById(R.id.profile_resources_btn);
         editProfile = (ImageButton)findViewById(R.id.editProfile_btn);
+        userprofilepage_listuser_btn = (ImageButton) findViewById(R.id.userprofilepage_listuser_btn);
         uName = findViewById(R.id.myUsername);
         uName.setText(UserStates.INSTANCE.getUsername()); // This is a temporary name.
         AsyncTask<String, Integer, String> jsonstr = new UserProfileTask().execute("get",UserStates.INSTANCE.getUsername());
@@ -53,6 +54,14 @@ public class wenxuan_ProfilePage extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        userprofilepage_listuser_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openMenu = new Intent(wenxuan_ProfilePage.this, ListUserPage.class);
+                startActivity(openMenu);
+            }
+        });
+
 //        uAvail = findViewById(R.id.myAvailability);
 //        uAvail.setOnClickListener(new View.OnClickListener() {
 //            @Override
