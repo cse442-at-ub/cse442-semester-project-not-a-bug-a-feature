@@ -12,12 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddNewClassActivity"></activity>
+
         <activity android:name=".Menu_page" />
         <activity android:name=".highschoolcollege" />
         <activity android:name=".experience" />
         <activity android:name=".editpage" />
-        <activity android:name=".Menu_page" />
         <activity android:name=".homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,11 +31,14 @@
         <activity android:name=".MyAvailability" />
         <activity android:name=".MyProfile" />
         <activity android:name=".login" />
+        <activity android:name=".AddNewClassActivity" />
         <activity android:name=".wenxuan_login" />
         <activity android:name=".Register" />
         <activity android:name=".wenxuan_ProfilePage" />
         <activity android:name=".UploadFilePage" />
         <activity android:name=".ResourcesPage" />
+        <activity android:name=".ListUserPage"/>
+        <activity android:name=".UserCommentPage"/>
     </application>
 
 </manifest>
