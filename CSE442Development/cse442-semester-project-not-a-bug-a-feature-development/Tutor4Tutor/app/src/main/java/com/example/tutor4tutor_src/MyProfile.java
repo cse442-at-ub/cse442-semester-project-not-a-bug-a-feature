@@ -12,7 +12,10 @@ public class MyProfile extends AppCompatActivity {
 
 
     TextView uName;
-    ImageButton uAvail,toMenu,profileupdate; // ImageButton Object(s) for User Availability Menu, ...
+    ImageButton uAvail,toMenu; // ImageButton Object(s) for User Availability Menu, ...
+
+    ImageButton profileupdate; // ImageButton Object(s) for User Availability Menu, ...
+
 
 
     @Override
@@ -41,8 +44,7 @@ public class MyProfile extends AppCompatActivity {
                 startActivity(openMenu);
             }
         });
-
-        profileupdate=(ImageButton) findViewById(R.id.editProfile);
+                profileupdate=(ImageButton) findViewById(R.id.editProfile);
         profileupdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,3 +54,7 @@ public class MyProfile extends AppCompatActivity {
         });
     }
 }
+
+
+
+
