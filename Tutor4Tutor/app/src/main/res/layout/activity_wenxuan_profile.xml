@@ -152,6 +152,7 @@
                 android:textStyle="bold" />
 
             <ImageButton
+                android:id="@+id/userprofilepage_listuser_btn"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
 
