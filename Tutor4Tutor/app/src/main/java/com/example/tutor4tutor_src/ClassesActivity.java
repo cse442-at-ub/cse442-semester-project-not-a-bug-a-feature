@@ -4,12 +4,15 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -58,6 +61,31 @@ public class ClassesActivity extends AppCompatActivity {
         });
 
         setListView();
+
+        //This is for search feature that show classes corresponding to input keyword
+        EditText searching = (EditText)findViewById(R.id.search);
+        searching.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String searchKeyword = editable.toString();
+                if (searchKeyword.length() > 0) {
+                    listView.setFilterText(searchKeyword);
+                } else {
+                    listView.clearTextFilter();
+                }
+            }
+        });
+
     }
 
 
@@ -110,7 +138,7 @@ public class ClassesActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
+    {   //this is for intenting data from add a new class page
         if(requestCode == 22)
         {
             if(resultCode == RESULT_OK)
