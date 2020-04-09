@@ -29,6 +29,7 @@ public class ClassesActivity extends AppCompatActivity {
 
     ArrayList<String> classdata = new ArrayList<String>();
     ArrayAdapter<String> adapter;
+    ArrayAdapter<String> tadapter;
     ListView listView;
 
     // this array for checked box from filter feature
@@ -98,7 +99,7 @@ public class ClassesActivity extends AppCompatActivity {
         classdata.add("General Physics 1" +"\n" + "Science" +"\n" + "Sam Taylor");
         classdata.add("Elementary Linear Algebra" +"\n" + "Math / Statistics" +"\n" + "Rechard Kim");
         classdata.add("Essay Review" +"\n" + "Writing" +"\n" + "Chenle Zhong");
-        classdata.add("Computer Science 1" +"\n" + "Engineering" +"\n" + "Kate Yang");
+        classdata.add("JAVA basic" +"\n" + "Engineering" +"\n" + "Kate Yang");
 
         listView = (ListView) findViewById(R.id.mList);
 
@@ -181,15 +182,29 @@ public class ClassesActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         String msg="";
                         int size = 0;
+                        ArrayList<String> checkStr = new ArrayList<>();
                         for (int i = 0; i < checked.length; i++) {
                             if (checked[i]) {
                                 msg=msg +"\n" + items[i];
                                 size++;
+                                for (int j = 0; j < classdata.size();j++) {
+                                    if (classdata.get(j).contains((String)items[i])){
+                                        checkStr.add(classdata.get(j));
+                                    }
+                                }
                             }
                         }
+
+                        if(size != 0) {
+                            tadapter = new ArrayAdapter<String>(ClassesActivity.this, android.R.layout.simple_list_item_1, checkStr);
+                            listView.setAdapter(tadapter);
+                            tadapter.notifyDataSetChanged();
+                        }
+
                         Toast.makeText(getApplicationContext(),
                                 size +" Subjects Selected:\n"+ msg , Toast.LENGTH_LONG)
                                 .show();
+
                     }
                 });
         builder.setNegativeButton("Cancel",
