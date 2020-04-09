@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class AddNewClassActivity extends AppCompatActivity {
 
-    EditText title, subject;
+    EditText title;
     Button confirm;
+    RadioGroup subject;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +24,7 @@ public class AddNewClassActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_new_class);
 
         title = (EditText)findViewById(R.id.class_title);
-        subject = (EditText)findViewById(R.id.class_subject);
+        subject = (RadioGroup) findViewById(R.id.radio_subject);
 
         confirm = (Button)findViewById(R.id.class_button);
 
@@ -30,8 +33,10 @@ public class AddNewClassActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (view.getId() == R.id.class_button)
                 {
+                    int id = subject.getCheckedRadioButtonId();
+                    RadioButton rb = (RadioButton) findViewById(id);
                     String text;
-                    text = title.getText().toString() +"\n" +subject.getText().toString();
+                    text = title.getText().toString() +'\n'+ rb.getText().toString() +'\n' + "User Name";
                     Intent intent = getIntent();
                     intent.putExtra("newclass",text);
                     setResult(RESULT_OK,intent);
