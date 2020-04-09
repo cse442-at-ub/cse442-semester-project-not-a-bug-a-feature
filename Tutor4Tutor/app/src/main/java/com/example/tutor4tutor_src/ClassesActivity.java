@@ -31,6 +31,9 @@ public class ClassesActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     ListView listView;
 
+    // this array for checked box from filter feature
+    boolean checked[] = {true, true, true, true};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -154,39 +157,38 @@ public class ClassesActivity extends AppCompatActivity {
     //START: a dialog for FILTER
     void show() {
         final List<String> ListItems = new ArrayList<>();
-        ListItems.add("Physics");
+        ListItems.add("Science");
+        ListItems.add("Engineering");
+        ListItems.add("Math / Statistics");
         ListItems.add("Writing");
-        ListItems.add("Statistics");
-        ListItems.add("Business");
         final CharSequence[] items =  ListItems.toArray(new String[ ListItems.size()]);
 
-        final List SelectedItems  = new ArrayList();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Which Subjects Do You Find?");
-        builder.setMultiChoiceItems(items, null,
+        builder.setMultiChoiceItems(items, checked,
                 new DialogInterface.OnMultiChoiceClickListener() {
+
                     @Override
                     public void onClick(DialogInterface dialog, int which,
                                         boolean isChecked) {
-                        if (isChecked) {
-                            SelectedItems.add(which);
-                        } else if (SelectedItems.contains(which)) {
-                            SelectedItems.remove(Integer.valueOf(which));
-                        }
+                        checked[which] = isChecked;
+                        // update checked[] according to which checkbox is clicked
                     }
                 });
         builder.setPositiveButton("Done",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         String msg="";
-                        for (int i = 0; i < SelectedItems.size(); i++) {
-                            int index = (int) SelectedItems.get(i);
-
-                            msg=msg +"\n" +ListItems.get(index);
+                        int size = 0;
+                        for (int i = 0; i < checked.length; i++) {
+                            if (checked[i]) {
+                                msg=msg +"\n" + items[i];
+                                size++;
+                            }
                         }
                         Toast.makeText(getApplicationContext(),
-                                SelectedItems.size() +" Subjects Selected:\n"+ msg , Toast.LENGTH_LONG)
+                                size +" Subjects Selected:\n"+ msg , Toast.LENGTH_LONG)
                                 .show();
                     }
                 });
