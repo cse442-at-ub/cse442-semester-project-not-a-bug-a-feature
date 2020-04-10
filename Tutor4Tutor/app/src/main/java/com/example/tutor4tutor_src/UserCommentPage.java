@@ -38,8 +38,6 @@ public class UserCommentPage extends AppCompatActivity {
 
         usernameview.setText(UserStates.INSTANCE.getSelectUsername());
         showComment();
-
-
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
