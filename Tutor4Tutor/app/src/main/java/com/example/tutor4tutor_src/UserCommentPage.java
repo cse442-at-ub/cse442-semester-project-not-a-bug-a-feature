@@ -27,7 +27,6 @@ public class UserCommentPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_commentpage);
         //final boolean[] isPressed = new boolean[1];
-
         //isPressed[0] = false;
         final TextView usernameview = (TextView)findViewById(R.id.commentpage_username);
         final ImageButton likebtn = (ImageButton)findViewById(R.id.commentpage_likebtn);
@@ -39,8 +38,6 @@ public class UserCommentPage extends AppCompatActivity {
 
         usernameview.setText(UserStates.INSTANCE.getSelectUsername());
         showComment();
-
-
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
