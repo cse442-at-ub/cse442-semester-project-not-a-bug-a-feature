@@ -4,12 +4,15 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,7 +29,11 @@ public class ClassesActivity extends AppCompatActivity {
 
     ArrayList<String> classdata = new ArrayList<String>();
     ArrayAdapter<String> adapter;
+    ArrayAdapter<String> tadapter;
     ListView listView;
+
+    // this array for checked box from filter feature
+    boolean checked[] = {true, true, true, true};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,16 +65,41 @@ public class ClassesActivity extends AppCompatActivity {
         });
 
         setListView();
+
+        //This is for search feature that show classes corresponding to input keyword
+        EditText searching = (EditText)findViewById(R.id.search);
+        searching.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String searchKeyword = editable.toString();
+                if (searchKeyword.length() > 0) {
+                    listView.setFilterText(searchKeyword);
+                } else {
+                    listView.clearTextFilter();
+                }
+            }
+        });
+
     }
 
 
     public void setListView()
     {
         //example of one class
-        classdata.add("Let's Physics!" +"\n" + "PHY101");
-        classdata.add("EASY Statistics" +"\n" + "STA303");
-        classdata.add("Check Your Sentences" +"\n" + "WTR101");
-        classdata.add("Business Tutor" +"\n" + "Elementary Business");
+        classdata.add("General Physics 1" +"\n" + "Science" +"\n" + "Sam Taylor");
+        classdata.add("Elementary Linear Algebra" +"\n" + "Math / Statistics" +"\n" + "Rechard Kim");
+        classdata.add("Essay Review" +"\n" + "Writing" +"\n" + "Chenle Zhong");
+        classdata.add("JAVA basic" +"\n" + "Engineering" +"\n" + "Kate Yang");
 
         listView = (ListView) findViewById(R.id.mList);
 
@@ -110,7 +142,7 @@ public class ClassesActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
+    {   //this is for intenting data from add a new class page
         if(requestCode == 22)
         {
             if(resultCode == RESULT_OK)
@@ -126,40 +158,53 @@ public class ClassesActivity extends AppCompatActivity {
     //START: a dialog for FILTER
     void show() {
         final List<String> ListItems = new ArrayList<>();
-        ListItems.add("Physics");
+        ListItems.add("Science");
+        ListItems.add("Engineering");
+        ListItems.add("Math / Statistics");
         ListItems.add("Writing");
-        ListItems.add("Statistics");
-        ListItems.add("Business");
         final CharSequence[] items =  ListItems.toArray(new String[ ListItems.size()]);
 
-        final List SelectedItems  = new ArrayList();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Which Subjects Do You Find?");
-        builder.setMultiChoiceItems(items, null,
+        builder.setMultiChoiceItems(items, checked,
                 new DialogInterface.OnMultiChoiceClickListener() {
+
                     @Override
                     public void onClick(DialogInterface dialog, int which,
                                         boolean isChecked) {
-                        if (isChecked) {
-                            SelectedItems.add(which);
-                        } else if (SelectedItems.contains(which)) {
-                            SelectedItems.remove(Integer.valueOf(which));
-                        }
+                        checked[which] = isChecked;
+                        // update checked[] according to which checkbox is clicked
                     }
                 });
         builder.setPositiveButton("Done",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         String msg="";
-                        for (int i = 0; i < SelectedItems.size(); i++) {
-                            int index = (int) SelectedItems.get(i);
-
-                            msg=msg +"\n" +ListItems.get(index);
+                        int size = 0;
+                        ArrayList<String> checkStr = new ArrayList<>();
+                        for (int i = 0; i < checked.length; i++) {
+                            if (checked[i]) {
+                                msg=msg +"\n" + items[i];
+                                size++;
+                                for (int j = 0; j < classdata.size();j++) {
+                                    if (classdata.get(j).contains((String)items[i])){
+                                        checkStr.add(classdata.get(j));
+                                    }
+                                }
+                            }
                         }
+
+                        if(size != 0) {
+                            tadapter = new ArrayAdapter<String>(ClassesActivity.this, android.R.layout.simple_list_item_1, checkStr);
+                            listView.setAdapter(tadapter);
+                            tadapter.notifyDataSetChanged();
+                        }
+
                         Toast.makeText(getApplicationContext(),
-                                SelectedItems.size() +" Subjects Selected:\n"+ msg , Toast.LENGTH_LONG)
+                                size +" Subjects Selected:\n"+ msg , Toast.LENGTH_LONG)
                                 .show();
+
                     }
                 });
         builder.setNegativeButton("Cancel",
