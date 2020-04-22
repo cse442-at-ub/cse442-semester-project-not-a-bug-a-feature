@@ -14,14 +14,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="subject name would be intented"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/instructor_inLectures"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="instructor name would be intented"
-        android:textSize="24sp" />
+        android:textSize="20sp" />
 
     <ListView
         android:id="@+id/lecturelist"

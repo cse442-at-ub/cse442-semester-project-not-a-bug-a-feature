@@ -110,8 +110,9 @@ public class ClassesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent openProfile = new Intent(ClassesActivity.this, LecturesActivity.class);
-                startActivity(openProfile);
+                Intent openClass = new Intent(ClassesActivity.this, LecturesActivity.class);
+                openClass.putExtra("classinfo", classdata.get(i));
+                startActivity(openClass);
             }
         });
 
