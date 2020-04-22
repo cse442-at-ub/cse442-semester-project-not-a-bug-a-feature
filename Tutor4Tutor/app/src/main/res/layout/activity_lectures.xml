@@ -1,75 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="100"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ClassesActivity"
-    tools:showIn="@layout/activity_classes">
+    tools:context=".LecturesActivity">
 
-    <LinearLayout
-        android:id="@+id/ll"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="80"
-        android:weightSum="10">
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <TextView
-            android:id="@+id/tv"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3">
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-        </TextView>
+    </com.google.android.material.appbar.AppBarLayout>
 
-        <Button
-            android:id="@+id/goToProfile"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="7"
-            android:text="View a Profile" />
+    <include layout="@layout/content_lectures" />
 
-    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="0dp"
-        android:layout_weight="20">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="Intro" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="Lec 01" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="Lec 02" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="Lec 03" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text="Lec 04" />
-        </LinearLayout>
-    </ScrollView>
-
-</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

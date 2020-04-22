@@ -1,9 +1,14 @@
 package com.example.tutor4tutor_src;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class LecturesActivity extends AppCompatActivity {
 
@@ -11,9 +16,19 @@ public class LecturesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lectures);
-        //setTitle("Class title: Subject name");
+        setTitle("Class Title would be intented");
 
-        TextView text = (TextView) findViewById(R.id.tv);
-        text.setText("\n Here would be a brief description of this class. \n Here would be a brief description of this class. \n Here would be a brief description of this class. \n");
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LecturesActivity.this, AddNewLectureActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
