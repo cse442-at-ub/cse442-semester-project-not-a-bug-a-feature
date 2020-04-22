@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -25,7 +26,7 @@ public class LecturesActivity extends AppCompatActivity {
     ArrayList<String> videodata = new ArrayList<String>();
     ArrayList<Video> videolist = new ArrayList<Video>();
     ArrayAdapter<String> adapter;
-    ListView listView = (ListView) findViewById(R.id.lecturelist);
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,9 @@ public class LecturesActivity extends AppCompatActivity {
     }
 
     public void setListView() {
+
+        listView = (ListView) findViewById(R.id.lecturelist);
+
         //instances of lectures; it will be gotten from web server according to classinfo
         Video v = new Video("Intro", "https://youtu.be/fwmvF5ffmhg");
         videodata.add(v.getTitle());
@@ -75,6 +79,39 @@ public class LecturesActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,videodata);
         listView.setAdapter(adapter);
-        
+
+        //TODO: WHEN clicking a certain video -> open this link using YOUTUBE app
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                //IMPLEMENT HERE
+            }
+        });
+        //TODO: End
+
+        //DELETE
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, final View view, final int position, long id) {
+
+                //Dialog
+                AlertDialog.Builder dialog = new AlertDialog.Builder(view.getContext());
+                dialog.setTitle("Delete a Lecture")
+                        .setMessage("Are you sure to delete a lecture video?")
+                        .setNegativeButton("Cancel",null)
+                        .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which)
+                            {
+                                videodata.remove(position);
+                                videolist.remove(position);
+                                adapter.notifyDataSetChanged();
+                            }
+                        })
+                        .show();
+                return true;
+            }
+        }); //DELETE END
     }
 }
