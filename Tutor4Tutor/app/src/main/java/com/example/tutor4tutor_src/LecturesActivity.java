@@ -27,6 +27,7 @@ public class LecturesActivity extends AppCompatActivity {
     ArrayList<Video> videolist = new ArrayList<Video>();
     ArrayAdapter<String> adapter;
     ListView listView;
+    final int REQUEST = 14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,10 +57,30 @@ public class LecturesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LecturesActivity.this, AddNewLectureActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST);
             }
         });
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        if(requestCode == REQUEST);
+        {
+            if(resultCode == RESULT_OK)
+            {
+                String titleandurl = data.getStringExtra("newlec");
+                String[] split_array = titleandurl.split("\\n");
+                if (split_array.length == 2) {
+                    videodata.add(split_array[0]);
+                    Video newlecture = new Video(split_array[0],split_array[1]);
+                    videolist.add(newlecture);
+                }
+                adapter.notifyDataSetChanged();
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     public void setListView() {
