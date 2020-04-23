@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class login extends AppCompatActivity {
 
     EditText editText, editText2;
-    Button button;
+    Button button,button15;
     CheckBox checkBox;
 
 
@@ -29,6 +29,7 @@ public class login extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.editText);
         editText2 = (EditText) findViewById(R.id.editText2);
         button = (Button) findViewById(R.id.button);
+        button15= (Button) findViewById(R.id.button15);
         checkBox = (CheckBox) findViewById(R.id.checkBox);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +51,14 @@ public class login extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "please enter correct details ", Toast.LENGTH_LONG).show();
 
                 }
+            }
+        });
+        button15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this, forgetpassword.class);
+                startActivity(intent);
+
             }
         });
     }

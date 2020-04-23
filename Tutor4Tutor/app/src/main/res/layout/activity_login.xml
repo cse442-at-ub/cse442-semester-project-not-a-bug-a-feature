@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login">
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -120,6 +121,22 @@
         android:layout_marginRight="112dp"
         android:layout_marginBottom="441dp"
         android:text="Remember password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="169dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="247dp"
+        android:text="Forget Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -12,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddNewPost"></activity>
-        <activity android:name=".ReplyPost" />
+        <activity android:name=".security"></activity>
+        <activity android:name=".reset" />
+        <activity android:name=".forgetpassword" />
         <activity android:name=".progress4" />
         <activity android:name=".progress3" />
         <activity android:name=".progress2" />
