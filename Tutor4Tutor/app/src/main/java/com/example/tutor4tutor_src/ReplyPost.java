@@ -13,11 +13,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class ReplyPost extends AppCompatActivity {
+import java.security.cert.Extension;
 
+public class ReplyPost extends AppCompatActivity {
     private static final String TAG = ReplyPost.class.getSimpleName();
     private final String CHANNEL_ID = "reply_to_post";
     private final int NOTIFICATION_ID = 001;
@@ -27,7 +29,6 @@ public class ReplyPost extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reply_post);
     }
-
     public void sendmsg(View view) {
         EditText msg = (EditText) findViewById(R.id.Message);
         String sms = msg.getText().toString();
@@ -67,4 +68,5 @@ public class ReplyPost extends AppCompatActivity {
             notificationManager.createNotificationChannel(notificationChannel);
         }
     }
+
 }
