@@ -34,8 +34,6 @@ public class login extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 if (login(editText2.getText().toString(), editText.getText().toString()) == 1) {
                     Toast.makeText(getApplicationContext(), "logging in!", Toast.LENGTH_LONG).show();
                     if (!(checkBox.isChecked())) {
@@ -62,11 +60,10 @@ public class login extends AppCompatActivity {
             return 0;
         }
         else if (name.equals("testuser") && passwd.equals("password"))
-        {return 1;
-
+        {
+            return 1;
         }
         return 0;
-
     }};
 
 

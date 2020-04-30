@@ -45,6 +45,7 @@
         <activity android:name=".ResourcesPage" />
         <activity android:name=".ListUserPage" />
         <activity android:name=".UserCommentPage" />
+        <activity android:name=".WhiteList" />
     </application>
 
 </manifest>
