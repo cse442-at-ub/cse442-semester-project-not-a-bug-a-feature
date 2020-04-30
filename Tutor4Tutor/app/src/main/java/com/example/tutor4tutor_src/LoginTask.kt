@@ -13,7 +13,6 @@ public class LoginTask : AsyncTask<String, Int, Boolean>() {
         val username = "wyang34";
         val remoteHost = "cheshire.cse.buffalo.edu"
         val password = "Hbxnywx1995.";
-        val filepath = "/userinfo.txt"
         var destPath = "/home/eslgrad/wyang34/Documents"
         val session = jsch.getSession(username, remoteHost, 22);
         session.setConfig("StrictHostKeyChecking", "no")
@@ -92,7 +91,6 @@ public class LoginTask : AsyncTask<String, Int, Boolean>() {
     {
         val stream: InputStream = sftpChannel.get("/home/eslgrad/wyang34/Documents/userstatus.txt")
         var tmp:String = ""
-        var isContain = false
         try {
             val br = BufferedReader(InputStreamReader(stream))
             var line: String =""

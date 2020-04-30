@@ -28,9 +28,7 @@ public class DatabaseHelper : AsyncTask<String, Int, String>() {
         sftpChannel.cd(destPath)
         //val stream: InputStream = sftpChannel.get(destPath + filepath)
         var isContainFile = false
-        var result = ""
         val filelist = sftpChannel.ls(destPath)
-        val mstream: InputStream = sftpChannel.get(destPath)
         try {
             for (i in filelist.indices) {
                 val entry = filelist[i] as ChannelSftp.LsEntry
@@ -89,7 +87,6 @@ public class DatabaseHelper : AsyncTask<String, Int, String>() {
     fun mysplite(line:String):List<String>
     {
         var usernasme = ""
-        var data = ""
         var arrlist = listOf<String>()
         for (item in line)
         {
@@ -100,7 +97,7 @@ public class DatabaseHelper : AsyncTask<String, Int, String>() {
             else
                 break
         }
-        data = line.substring(usernasme.count()+1,line.count())
+        var data = line.substring(usernasme.count()+1,line.count())
         arrlist+=usernasme
         arrlist+=data
         return arrlist

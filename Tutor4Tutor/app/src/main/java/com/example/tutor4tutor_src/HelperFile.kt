@@ -14,7 +14,6 @@ public class HelperFile : AsyncTask<String, Int, List<String>>() {
         val username = "gunjangu";
         val password = "Tukaminihai@123.";
         val remoteHost = "cheshire.cse.buffalo.edu"
-        val filepath = "/" + params[1]
         var destPath = "/home/csdue/gunjangu/CSE442"
         //var commentFilePath = ""
         val session = jsch.getSession(username, remoteHost, 22);
@@ -26,7 +25,6 @@ public class HelperFile : AsyncTask<String, Int, List<String>>() {
         channel.connect()
         val sftpChannel = channel as ChannelSftp
         sftpChannel.cd(destPath)
-        var result = ""
         var data:List<String> = listOf()
         var isContain = false
         if(params[0] == "get")

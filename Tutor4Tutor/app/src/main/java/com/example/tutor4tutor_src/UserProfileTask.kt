@@ -67,8 +67,8 @@ public class UserProfileTask : AsyncTask<String, Int, String>() {
         var arr = orignal.split(",")
         for (i in 0..arr.count()-1)
         {
-            var strtoadd = arr[i]
-            strtoadd = data.get(i).toString()
+
+            var strtoadd = data.get(i).toString()
             tmp = tmp + strtoadd+","
         }
         //tmp = tmp.substring(0,tmp.count()-1)
@@ -77,7 +77,6 @@ public class UserProfileTask : AsyncTask<String, Int, String>() {
     fun mysplite(line:String):List<String>
     {
         var usernasme = ""
-        var data = ""
         var arrlist = listOf<String>()
         for (item in line)
         {
@@ -88,15 +87,12 @@ public class UserProfileTask : AsyncTask<String, Int, String>() {
             else
                 break
         }
-        data = line.substring(usernasme.count()+1,line.count())
+        var data = line.substring(usernasme.count()+1,line.count())
         arrlist+=usernasme
         arrlist+=data
         return arrlist
     }
-    fun loadUserData_JSONString(str:String)
-    {
 
-    }
 }
 enum class DataType()
 {
