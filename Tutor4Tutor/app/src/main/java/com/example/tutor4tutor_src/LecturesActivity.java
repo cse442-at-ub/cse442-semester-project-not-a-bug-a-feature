@@ -2,6 +2,7 @@ package com.example.tutor4tutor_src;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -107,6 +108,10 @@ public class LecturesActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
                 //IMPLEMENT HERE
+                String u = videolist.get(position).getUrl();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(u));
+                startActivity(intent);
+
             }
         });
         //TODO: End
