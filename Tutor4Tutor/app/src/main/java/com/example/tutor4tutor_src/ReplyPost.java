@@ -2,60 +2,40 @@ package com.example.tutor4tutor_src;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.AsyncTask;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.RadioButton;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
+import com.google.android.material.snackbar.Snackbar;
 
+import java.security.cert.Extension;
 
 public class ReplyPost extends AppCompatActivity {
+    private static final String TAG = ReplyPost.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reply_post);
-        final TextView usernameview = (TextView)findViewById(R.id.Username);
-        Button rply =(Button)findViewById(R.id.Reply);
-        final EditText inputtext = (EditText) findViewById(R.id.Message);
-
-        usernameview.setText(UserStates.INSTANCE.getSelectUsername());
-        showReply();
-
-        rply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new ServerHelper().execute("set",inputtext.getText().toString());
-                finish();
-                startActivity(getIntent());
-            }
-        });
     }
-    void showReply()
-    {
-
-        final ArrayList<String> resourceslist = new ArrayList<String>();
-        try {
-            AsyncTask<String, Integer, List<? extends String>> str1 = new ServerHelper().execute("getMessage",UserStates.INSTANCE.getSelectUsername()+"/Message.txt");
-            for (String item : str1.get()) {
-                resourceslist.add(item);
-            }
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    public void sendmsg(View view) {
+        EditText msg = (EditText) findViewById(R.id.Message);
+        String sms = msg.getText().toString();
+        Intent smsIntent = new Intent(Intent.ACTION_SENDTO);
+        // Add the message (sms) with the key ("sms_body").
+        smsIntent.putExtra("sms_body", sms);
+        if (smsIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(smsIntent);
+        } else {
+            Log.d(TAG, "Can't resolve app for ACTION_SENDTO Intent");
         }
-        ListView mView = findViewById(R.id.listmsg);
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1, resourceslist);
-        mView.setAdapter(arrayAdapter);
+        Snackbar.make(view, "Responnded to the post", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
+
     }
 
 }
