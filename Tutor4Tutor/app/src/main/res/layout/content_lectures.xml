@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LecturesActivity"
+    tools:showIn="@layout/activity_lectures">
+
+    <TextView
+        android:id="@+id/subject_inLectures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="subject name would be intented"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/instructor_inLectures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="instructor name would be intented"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lecturelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
