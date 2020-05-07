@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 
 public class MyAvailability extends AppCompatActivity {
 
-    ImageButton backButton;
     Button button15, button16, button17, button18, button19, button20, button21;
 
     @Override
@@ -25,17 +24,11 @@ public class MyAvailability extends AppCompatActivity {
         button20 = findViewById(R.id.button20);
         button21 = findViewById(R.id.button21);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent returnUserProfile = new Intent(MyAvailability.this, MyProfile.class);
-                startActivity(returnUserProfile);
-            }
-        });
+
         button15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -43,7 +36,7 @@ public class MyAvailability extends AppCompatActivity {
         button16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -51,7 +44,7 @@ public class MyAvailability extends AppCompatActivity {
         button17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -59,7 +52,7 @@ public class MyAvailability extends AppCompatActivity {
         button18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -67,7 +60,7 @@ public class MyAvailability extends AppCompatActivity {
         button19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -75,7 +68,7 @@ public class MyAvailability extends AppCompatActivity {
         button20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
@@ -83,7 +76,7 @@ public class MyAvailability extends AppCompatActivity {
         button21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyAvailability.this, timeslots.class);
+                Intent intent = new Intent(MyAvailability.this, empty.class);
                 startActivity(intent);
 
             }
