@@ -49,6 +49,12 @@ public class LoginTask : AsyncTask<String, Int, Boolean>() {
             var tmps = logout(operation[1],sftpChannel)
             sftpChannel.put(ByteArrayInputStream(tmps.toByteArray()), "/home/eslgrad/wyang34/Documents/userstatus.txt", ChannelSftp.OVERWRITE);
         }
+        else if(operation[0]=="reset")
+        {
+            var tmps = resetPassword(operation[1],operation[2],operation[3],sftpChannel)
+            state = tmps
+            //sftpChannel.put(ByteArrayInputStream(tmps.toByteArray()), "/home/eslgrad/wyang34/Documents/userstatus.txt", ChannelSftp.OVERWRITE);
+        }
 
         //sftpChannel.put(ByteArrayInputStream(teststr.toByteArray()), destPath+filepath, ChannelSftp.OVERWRITE);
         //readFile(sftpChannel,destPath,filepath)
@@ -169,6 +175,43 @@ public class LoginTask : AsyncTask<String, Int, Boolean>() {
         }
         return !isContain
     }
+    fun resetPassword(username:String,password:String,newpassword:String,sftpChannel: ChannelSftp):Boolean
+    {
+        var isContain = false
+        var orfile:String = ""
+        val stream: InputStream = sftpChannel.get("/home/eslgrad/wyang34/Documents/userinfo.txt")
+        try {
+            val br = BufferedReader(InputStreamReader(stream))
+            var line: String =""
+            while (br.readLine().also({ line = it }) != null) {
+                println(line)
+                var user = line.split(',')
+                if (user[0] == username && user[1] == password)
+                {
+                    isContain = true
+                }
+                else{
+                    orfile+=line+"\n"
+                }
+            }
+        } catch (io: IOException) {
+
+        } catch (e: Exception) {
+            println("Exception occurred during reading file from SFTP server due to " + e.message)
+            e.message
+        }
+        if(isContain)
+        {
+            var u: String =orfile + username + ","+newpassword+"\n"
+            sftpChannel.put(
+                    ByteArrayInputStream(u.toByteArray()),
+                    "/home/eslgrad/wyang34/Documents/userinfo.txt",
+                    ChannelSftp.OVERWRITE
+            )
+        }
+        return isContain
+    }
+
     fun readFile(sftpChannel: ChannelSftp, path:String, filename:String)
     {
         val stream: InputStream = sftpChannel.get(path+filename)
