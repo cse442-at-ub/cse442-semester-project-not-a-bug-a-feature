@@ -22,7 +22,6 @@ public class AddNewPost extends AppCompatActivity {
         sub= (EditText) findViewById(R.id.subjectdetail);
         des= (EditText) findViewById(R.id.descdetail);
         post=findViewById(R.id.Post);
-
         post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
