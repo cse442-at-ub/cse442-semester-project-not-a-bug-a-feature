@@ -36,7 +36,7 @@ public class AddNewClassActivity extends AppCompatActivity {
                     int id = subject.getCheckedRadioButtonId();
                     RadioButton rb = (RadioButton) findViewById(id);
                     String text;
-                    text = title.getText().toString() +'\n'+ rb.getText().toString() +'\n' + "User Name";
+                    text = title.getText().toString() +'\n'+ rb.getText().toString() +'\n' + "Wenxuan Wang";
                     Intent intent = getIntent();
                     intent.putExtra("newclass",text);
                     setResult(RESULT_OK,intent);

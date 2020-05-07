@@ -29,6 +29,7 @@ public class LecturesActivity extends AppCompatActivity {
     ArrayAdapter<String> adapter;
     ListView listView;
     final int REQUEST = 14;
+    int number = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,19 @@ public class LecturesActivity extends AppCompatActivity {
             setTitle(split_str[0]);
             sub.setText(split_str[1]);
             ins.setText(split_str[2]);
+        }
+
+        if (split_str[0].equals("General Physics 1")){
+            number = 0;
+        }
+        else if (split_str[0].equals("Elementary Linear Algebra")){
+            number = 1;
+        }
+        else if (split_str[0].equals("Essay Review")){
+            number = 2;
+        }
+        else if (split_str[0].equals("JAVA basic")){
+            number = 3;
         }
 
         setListView();
@@ -88,16 +102,57 @@ public class LecturesActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.lecturelist);
 
+
         //instances of lectures; it will be gotten from web server according to classinfo
-        Video v = new Video("Intro", "https://youtu.be/fwmvF5ffmhg");
-        videodata.add(v.getTitle());
-        videolist.add(v);
-        v = new Video("Lecture 1", "https://youtu.be/4pUc7SD0PmU");
-        videodata.add(v.getTitle());
-        videolist.add(v);
-        v = new Video("Lecture 2", "https://youtu.be/h3aP1cxwCyk");
-        videodata.add(v.getTitle());
-        videolist.add(v);
+        if (number == 0) {
+            Video v = new Video("Intro: what is physics", "https://youtu.be/fwmvF5ffmhg");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("Lecture 1", "https://youtu.be/4pUc7SD0PmU");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("Lecture 2", "https://youtu.be/h3aP1cxwCyk");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+        }
+
+        else if (number == 1) {
+            Video v = new Video("Lec 1: syllabus and overview", "https://youtu.be/fwmvF5ffmhg");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("Lec 2", "https://youtu.be/4pUc7SD0PmU");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("Lec 3", "https://youtu.be/h3aP1cxwCyk");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+        }
+
+        else if (number == 2) {
+            Video v = new Video("Intro> Welcome Session", "https://youtu.be/fwmvF5ffmhg");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("Lecture 1: Peer Editing", "https://youtu.be/4pUc7SD0PmU");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+        }
+
+        else if (number == 3) {
+            Video v = new Video("[1] install & set up", "https://youtu.be/fwmvF5ffmhg");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("[2] print out", "https://youtu.be/4pUc7SD0PmU");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+            v = new Video("[3] loop", "https://youtu.be/h3aP1cxwCyk");
+            videodata.add(v.getTitle());
+            videolist.add(v);
+        }
+
+        else {
+            //nothing on list
+        }
+
 
         adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,videodata);
         listView.setAdapter(adapter);
