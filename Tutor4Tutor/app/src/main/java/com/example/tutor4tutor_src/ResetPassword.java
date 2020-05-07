@@ -1,8 +1,5 @@
 package com.example.tutor4tutor_src;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -12,40 +9,41 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
-
-public class wenxuan_login extends AppCompatActivity {
-
-    EditText editText, editText2;
+public class ResetPassword extends AppCompatActivity {
+    EditText username, password,newpassword;
     Button button;
     CheckBox checkBox;
-    Button register;
-    Button reset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wenxuan_login);
+        setContentView(R.layout.activity_resetpassword);
 
-        editText = (EditText) findViewById(R.id.wenxuan_editText);
-        editText2 = (EditText) findViewById(R.id.wenxuan_editText2);
-        button = (Button) findViewById(R.id.wenxuan_button);
-        checkBox = (CheckBox) findViewById(R.id.wenxuan_checkBox);
-        register = (Button)findViewById(R.id.register_btn);
-        reset = (Button)findViewById(R.id.register_resetPassword);
+        username = (EditText) findViewById(R.id.resetpassword_username);
+        password = (EditText) findViewById(R.id.resetpassword_password);
+        newpassword = (EditText) findViewById(R.id.resetpassword_newpassword);
+
+
+        button = (Button) findViewById(R.id.resetpassword_confirm);
+        checkBox = (CheckBox) findViewById(R.id.resetpassword_check);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (login(editText2.getText().toString(), editText.getText().toString()) == 1) {
-                    Toast.makeText(getApplicationContext(), "logging in!", Toast.LENGTH_LONG).show();
+                if (confirmButtonDown(username.getText().toString(), password.getText().toString(),newpassword.getText().toString()) == 1) {
+                    Toast.makeText(getApplicationContext(), "reset!", Toast.LENGTH_LONG).show();
                     if (!(checkBox.isChecked())) {
-                        editText2.setText("");
-                        editText.setText("");
+                        username.setText("");
+                        password.setText("");
+                        newpassword.setText("");
                     }
-                    Intent intent = new Intent(wenxuan_login.this, wenxuan_ProfilePage.class);
+                    Intent intent = new Intent(ResetPassword.this, wenxuan_login.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "please enter correct details ", Toast.LENGTH_LONG).show();
@@ -53,27 +51,10 @@ public class wenxuan_login extends AppCompatActivity {
                 }
             }
         });
-
-
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(wenxuan_login.this, Register.class);
-                startActivity(intent);
-            }
-        });
-
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(wenxuan_login.this, ResetPassword.class);
-                startActivity(intent);
-            }
-        });
     }
 
     //LOGIN METHOD
-    private int login(String name, String passwd) {
+    private int confirmButtonDown(String name, String passwd,String newpasswd) {
         Map<Integer, String> map = new HashMap<Integer, String>();
         if (name.isEmpty() || passwd.isEmpty()) {
 //            map.put(1,"asdasd");
@@ -86,14 +67,14 @@ public class wenxuan_login extends AppCompatActivity {
             return 0;
         }
 
-        AsyncTask<String, Integer, Boolean> issucess = new LoginTask().execute("login", name, passwd);
+        AsyncTask<String, Integer, Boolean> issucess = new LoginTask().execute("reset", name, passwd,newpasswd);
         try {
             if (!issucess.get()) {
                 Toast.makeText(getApplicationContext(), "wrong username or password", Toast.LENGTH_LONG).show();
                 return 0;
             } else {
 
-                Toast.makeText(getApplicationContext(), "sign up success", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "reset success", Toast.LENGTH_LONG).show();
                 return 1;
             }
         } catch (ExecutionException e) {
@@ -104,4 +85,5 @@ public class wenxuan_login extends AppCompatActivity {
         return 0;
 
     }
+
 }

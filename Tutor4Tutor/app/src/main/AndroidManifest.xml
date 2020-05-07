@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".timeslots"></activity>
+        <activity android:name=".AddNewLectureActivity"></activity>
         <activity android:name=".AddNewPost" />
         <activity android:name=".ReplyPost" />
         <activity android:name=".progress4" />
@@ -47,6 +47,7 @@
         <activity android:name=".ListUserPage" />
         <activity android:name=".UserCommentPage" />
         <activity android:name=".WhiteList" />
+        <activity android:name=".ResetPassword"/>
     </application>
 
 </manifest>

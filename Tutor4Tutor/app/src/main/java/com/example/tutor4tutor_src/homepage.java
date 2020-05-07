@@ -50,35 +50,35 @@ public class homepage extends AppCompatActivity {
             }
 
         });
-        final String tests ="";
-        try {
-
-            Map<String, String> hm = new HashMap<String, String>();
-            hm.put("data","lkj");
-            hm.put("mnn","test");
-            JSONObject jo = new JSONObject(hm);
-            AsyncTask<String, Integer, String> str1 = new DatabaseHelper().execute("set","mdb.txt","yang",jo.toString());
-
-            //new DatabaseHelper().execute("set","mdb.txt","yang",jo.toString());
-            Toast.makeText(getApplicationContext(), str1.get(), Toast.LENGTH_LONG).show();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        AsyncTask<String, Integer, String> jsonstr = new DatabaseHelper().execute("get","mdb.txt","yang");
-        try {
-            String data = jsonstr.get();
-            JSONObject jo  = new JSONObject(data);
-            Toast.makeText(getApplicationContext(), jo.getString("data"), Toast.LENGTH_LONG).show();
-
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+//        final String tests ="";
+//        try {
+//
+//            Map<String, String> hm = new HashMap<String, String>();
+//            hm.put("data","lkj");
+//            hm.put("mnn","test");
+//            JSONObject jo = new JSONObject(hm);
+//            AsyncTask<String, Integer, String> str1 = new DatabaseHelper().execute("set","mdb.txt","yang",jo.toString());
+//
+//            //new DatabaseHelper().execute("set","mdb.txt","yang",jo.toString());
+//            Toast.makeText(getApplicationContext(), str1.get(), Toast.LENGTH_LONG).show();
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        AsyncTask<String, Integer, String> jsonstr = new DatabaseHelper().execute("get","mdb.txt","yang");
+//        try {
+//            String data = jsonstr.get();
+//            JSONObject jo  = new JSONObject(data);
+//            Toast.makeText(getApplicationContext(), jo.getString("data"), Toast.LENGTH_LONG).show();
+//
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
 
 
     }

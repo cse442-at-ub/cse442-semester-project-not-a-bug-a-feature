@@ -14,9 +14,7 @@ public class ServerHelper : AsyncTask<String, Int, List<String>>() {
         val username = "wyang34";
         val password = "Hbxnywx1995.";
         val remoteHost = "cheshire.cse.buffalo.edu"
-        val filepath = "/" + params[1]
         var destPath = "/home/eslgrad/wyang34/Documents"
-        var commentFilePath = ""
         val session = jsch.getSession(username, remoteHost, 22);
         session.setConfig("StrictHostKeyChecking", "no")
         session.setPassword(password);
@@ -26,7 +24,6 @@ public class ServerHelper : AsyncTask<String, Int, List<String>>() {
         channel.connect()
         val sftpChannel = channel as ChannelSftp
         sftpChannel.cd(destPath)
-        var result = ""
         var data:List<String> = listOf()
         var isContain = false
         if(params[0] == "get")
