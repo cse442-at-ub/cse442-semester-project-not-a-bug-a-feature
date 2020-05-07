@@ -47,6 +47,7 @@
         <activity android:name=".ListUserPage" />
         <activity android:name=".UserCommentPage" />
         <activity android:name=".WhiteList" />
+        <activity android:name=".ResetPassword"/>
     </application>
 
 </manifest>
